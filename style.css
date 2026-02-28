@@ -22,7 +22,7 @@ body {
     font-family: 'Bpmf Huninn', sans-serif;
     background-color: var(--bg-dark);
     color: var(--color-white);
-    min-height: 100vh;
+    min-height: 100dvh;
     min-width: clamp(500px, 90vw, 1000px);
     display: flex;
     flex-direction: column;
@@ -165,4 +165,5 @@ footer{
 footer p{
     font-size: 0.8em;
     font-weight: bold;
+
 }
