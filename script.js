@@ -24,7 +24,7 @@ const finalizarBtn = document.querySelector('#finalizar')
 adicionarBtn.addEventListener('click', () => {
     const numero = parseInt(numeroInput.value)
     //se não for um número ou se for menor que um ou se for maior que 100...
-    if (numero < 1 || numero > 100) {
+    if (isNaN(numero) || numero < 1 || numero > 100) {
         alert('Por favor, digite um número válido entre 1 e 100.') //exibe isso
         return
     }
@@ -80,4 +80,5 @@ finalizarBtn.addEventListener('click', () => {
         sumRes.textContent = `A soma dos números da lista é ${sum}.` //exibe a soma de todos os números da lista
         mediaRes.textContent = `A média dos números da lista é ${resMedia.toFixed(2)}.` //exibe a média dos números da lista
     }
+
 })
