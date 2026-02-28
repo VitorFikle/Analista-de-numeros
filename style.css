@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Bpmf+Huninn&family=Funnel+Display:wght@300..800&display=swap');
+
+:root {
+    --color-dark: #333;
+    --color-white: #fff;
+    --bg-dark: #333;
+    --bg-light: #fff;
+}
+
+div {
+    /* border: red solid 1px; */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: 'Bpmf Huninn', sans-serif;
+    background-color: var(--bg-dark);
+    color: var(--color-white);
+    min-height: 100vh;
+    min-width: clamp(500px, 90vw, 1000px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3em;
+}
+
+body.lightMode {
+    background-color: var(--bg-light);
+    color: var(--color-dark);
+}
+
+body.lightMode #lightModeBtn {
+    background-color: var(--bg-dark);
+}
+
+body.lightMode main {
+    background-color: var(--bg-dark);
+    color: var(--color-white);
+}
+
+#lightModeBtn {
+    position: fixed;
+    top: 1em;
+    right: 1em;
+    background-color: var(--bg-light);
+    height: 4em;
+    width: 4em;
+    cursor: pointer;
+    border-radius: 1em;
+}
+
+main {
+    background-color: var(--bg-light);
+    color: var(--color-dark);
+    min-height: clamp(300px, 50vh, 500px);
+    max-width: clamp(300px, 50vw, 500px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1.3em;
+    padding: 3em;
+    border-radius: 1em;
+}
+
+#numero {
+    padding: 0.5em;
+    font-size: 1.2em;
+    border-radius: 0.5em;
+}
+
+#adicionar {
+    cursor: pointer;
+    background-color: var(--bg-dark);
+    color: var(--color-white);
+    padding: 1em;
+    border-radius: 1em;
+    font-weight: bold;
+
+    transition: transform 0.2s ease;
+}
+
+#adicionar:hover{
+    transform: scale(0.95);
+}
+
+#finalizar {
+    cursor: pointer;
+    background-color: var(--bg-dark);
+    color: var(--color-white);
+    padding: 1em;
+    border-radius: 1em;
+    font-weight: bold;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+#finalizar:hover{
+    background-color: var(--bg-light);
+    color: var(--color-dark)
+}
+
+body.lightMode #adicionar{
+    background-color: var(--bg-light);
+    color: var(--color-dark);
+}
+
+/* Remove setinhas no Chrome, Edge e Safari */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Remove setinhas no Firefox */
+input[type="number"] {
+    appearance: textfield;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+#numberList {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    text-align: center;
+}
+
+#lista {
+    display: grid;
+    grid-template-columns: repeat(7, auto);
+    gap: 0.5em;
+    list-style: none;
+    padding: 0;
+}
+
+#res {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#res div {
+    font-size: 1.2em;
+}
+
+.stateRes {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+footer{
+    margin-top: 1em;
+}
+
+footer p{
+    font-size: 0.8em;
+    font-weight: bold;
+}

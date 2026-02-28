@@ -1,0 +1,24 @@
+<------------------------>
+Input aceitando APENAS números de 1 à 100
+Botão adicionar
+Números infinitos dentro do array (que pega do Input)
+Botão finalizar
+
+<----------AÇÕES---------->
+    Length (quantos números no array)
+    maior valor (Math.max(...Array))
+    menor valor (Math.min(...Array))
+    soma o array (
+        let soma = 0
+        for let i = 0; i < numeros.length; i++
+        soma += numeros[i]
+        )
+    media dos valores (
+        const media = soma / numeros.length
+    )
+<----------FIM das AÇÕES---------->
+
+exibir essas operações
+
+*se input estiver vazio = alert (não pode deixar vazio)
+*se adicionar depois de finalizar, oculte as operações
